@@ -1,0 +1,6 @@
+category: Gnome Mail
+requires: evolution libgcc1 libgconf2_4 libglib2.0_0 libgtk2.0_0 libintl8
+sdesc: "Evolution tray icon plugin"
+ldesc: "This plugin is useful when you want to put Evolution in the notification 
+area. While in tray, Evolution in minimized and its windows are skipped by the 
+pager."

@@ -1,0 +1,23 @@
+--- origsrc/evolution-tray-0.0.4/src/Makefile.am	2010-02-28 08:53:11.000000000 -0600
++++ src/evolution-tray-0.0.4/src/Makefile.am	2010-07-22 05:16:21.734274100 -0500
+@@ -28,7 +28,8 @@ plugin_DATA = 					\
+ plugin_LTLIBRARIES = liborg-gnome-evolution-tray.la
+ 
+ liborg_gnome_evolution_tray_la_SOURCES = tray.c
+-liborg_gnome_evolution_tray_la_LDFLAGS = -module -avoid-version -rpath $(PLUGIN_INSTALL_DIR)
++liborg_gnome_evolution_tray_la_LDFLAGS = -module -avoid-version -no-undefined
++liborg_gnome_evolution_tray_la_LIBADD = $(TRAY_EPLUGIN_LIBS) -leshell
+ 
+ EXTRA_DIST = 	org-gnome-evolution-tray.eplug.xml	\
+ 		$(schema_in_files)
+--- origsrc/evolution-tray-0.0.4/src/org-gnome-evolution-tray.eplug.xml	2010-02-28 04:24:44.000000000 -0600
++++ src/evolution-tray-0.0.4/src/org-gnome-evolution-tray.eplug.xml	2010-07-22 04:58:26.357257800 -0500
+@@ -3,7 +3,7 @@
+     <e-plugin
+ 	type="shlib"
+ 	id="org.gnome.evolution.plugin.tray"
+-	location="+PLUGIN_INSTALL_DIR+/liborg-gnome-evolution-tray.so"
++	location="+PLUGIN_INSTALL_DIR+/cygorg-gnome-evolution-tray.dll"
+ 	domain="+GETTEXT_PACKAGE+"
+ 	localedir="+LOCALEDIR+"
+         _name="Evolution Tray Icon">
