@@ -3,5 +3,4 @@ inherit gnome2
 DESCRIPTION="Evolution tray icon plugin"
 HOMEPAGE="http://gnome.eu.org/evo/"
 SRC_URI="http://gnome.eu.org/${P}.tar.gz"
-PATCH_URI="0.0.6-cygwin.patch
-           0.0.6-deps.patch"
+PATCH_URI="0.0.7-cygwin.patch"
