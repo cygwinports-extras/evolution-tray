@@ -1,0 +1,15 @@
+GIT_URI="git://gnome.eu.org/evolution-tray"
+GIT_REV=b55f5d8
+inherit gnome2 git
+
+NAME="evolution-tray"
+VERSION=0.0.8
+RELEASE=3
+CATEGORY="GNOME Mail"
+SUMMARY="Evolution tray icon plugin"
+DESCRIPTION="This plugin is useful when you want to put Evolution in the
+notification area. While in tray, Evolution in minimized and its windows are
+skipped by the pager."
+HOMEPAGE="http://gnome.eu.org/evo/"
+#SRC_URI="http://gnome.eu.org/${P}.tar.gz"
+PATCH_URI="0.0.7-cygwin.patch"

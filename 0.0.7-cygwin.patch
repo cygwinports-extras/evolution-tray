@@ -6,7 +6,7 @@
  liborg_gnome_evolution_tray_la_SOURCES = tray.c
 -liborg_gnome_evolution_tray_la_LIBADD = $(LIBGCONFBRIDGE_LIBS) $(LIBNOTIFY_LIBS)
 -liborg_gnome_evolution_tray_la_LDFLAGS = -module -avoid-version -rpath $(PLUGIN_INSTALL_DIR)
-+liborg_gnome_evolution_tray_la_LIBADD = $(LIBGCONFBRIDGE_LIBS) $(LIBNOTIFY_LIBS) $(TRAY_EPLUGIN_LIBS) -levolution-mail
++liborg_gnome_evolution_tray_la_LIBADD = $(LIBGCONFBRIDGE_LIBS) $(LIBNOTIFY_LIBS) $(TRAY_EPLUGIN_LIBS) -levolution-mail -lemail-engine
 +liborg_gnome_evolution_tray_la_LDFLAGS = -module -avoid-version -no-undefined
  
  EXTRA_DIST = 	org-gnome-evolution-tray.eplug.xml	\
