@@ -1,10 +1,10 @@
 GIT_URI="git://gnome.eu.org/evolution-tray"
-GIT_REV=b55f5d8
+GIT_REV=7d6bed2
 inherit gnome2 git
 
 NAME="evolution-tray"
-VERSION=0.0.8
-RELEASE=3
+VERSION=0.1.0
+RELEASE=1
 CATEGORY="GNOME Mail"
 SUMMARY="Evolution tray icon plugin"
 DESCRIPTION="This plugin is useful when you want to put Evolution in the
